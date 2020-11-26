@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFC - Universidade Federal do Ceará</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div class="Banner">
+      <img src="BrasaoUFCFinal.png" alt="">
+      <p class="title">SIGAA</p>
+      <p class="subtitle">Sistema Integrado de Gestão de Atividades Acadêmicas</p>
+      <p class="contact">SIGAA | Copyright © 2010-2020 - Secretaria de Tecnologia da Informação 
+        UFC - (85) 3366-9999 - si3asprd04.ufc.br</p>
+    </div>
+
+    <div class="Container">
+      <nav class="nav_tabs">
+        <ul>
+          <li>
+            <input type="radio" name="tabs" class="rd_tabs" id="tab1" checked>
+            <label for="tab1">SIGAA</label>
+            <div class="content">
+              <header>
+                <h1 class="title">Entrar no sistema</h1>
+                <a href="/"><img src="librasFinal.png" alt=""></a>
+              </header>
+              
+              <form action="/">
+                <input type="radio" name="user" class="rd_user" id="Aluno"checked><span>Aluno</span>
+                <input type="radio" name="user" class="rd_user" id="Prof_Fun"><span>Professor/Funcionario</span> 
+
+                <div class="input">
+                  <input type="text" name="login" id="login">
+                  <label for="login">Login</label>  
+                </div>
+                <div class="input">
+                  <input type="text" name="password" id="password">
+                  <label for="password">Senha</label>  
+                </div>
+
+                <button type="submit">Entrar</button>
+                <button href="/" id="signUp">Cadastre-se</button>
+              </form>
+              
+              <div class="util">
+                <a href="/">Esqueceu o login?</a>
+                <a href="/" id="last">Esqueceu a senha?</a>
+              </div>
+            </div>
+
+            <a class="tutorial" href="/">
+              <p>TUTORIAIS  <span>></span> </p>
+            </a>
+          </li>
+
+          <li>
+            <input type="radio" name="tabs" class="rd_tabs" id="tab2">
+            <label for="tab2">SIPAC</label>
+            <div class="content">2</div>
+          </li>
+
+          <li>
+            <input type="radio" name="tabs" class="rd_tabs" id="tab3">
+            <label for="tab3">SIGPRH</label>
+            <div class="content">3</div>
+          </li>
+
+          <li>
+            <input type="radio" name="tabs" class="rd_tabs" id="tab4">
+            <label for="tab4">SIGADMIN</label>
+            <div class="content">4</div>
+          </li>
+
+          <li>
+            <input type="radio" name="tabs" class="rd_tabs" id="tab5">
+            <label for="tab5">BU</label>
+            <div class="content">5</div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </body>
+</html>
