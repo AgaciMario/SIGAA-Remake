@@ -180,19 +180,18 @@ label[for=tab5] {
   width: 346px;
   height: 44px;
 
-  border: 1px solid var(--gray);
   border-radius: 10px;
 }
 
-.content form .input input {
+form .input input {
   width: calc(100% - 10px);
   height: 100%;
   
   padding-left: 10px;
-  font-size: 19px;
-  border: 0;
   border-radius: 10px;
-
+  border: 1px solid var(--gray);
+  
+  font-size: 19px;
   color: var(--gray);
   background: none;
   outline: none;
@@ -206,6 +205,8 @@ label[for=tab5] {
   background: none;
   color: var(--gray);
   font-size: 19px;
+
+  transition: all 0.1s ease-out
 }
 
 .content form button {  
@@ -280,15 +281,32 @@ label[for=tab5] {
 
 /*-------- INTERACTIONS --------*/
 
+/* TABS */
 .rd_tabs:checked ~ label {
   background: white;
 }
-
 .rd_tabs:checked ~ .content {
   display: block; /* mudança de abas */
 }
 
+/* FORM RADIO BUTTONS */
 .rd_user:checked ~ .lbl_rd_user {
   background: var(--green);
   border-color: var(--green);
+}
+
+/* FORM INPUTS */
+form .input input:focus{
+  border-color: var(--blue);
+  color: var(--blue);
+}
+.input input:focus ~ label {
+  top: -21px;
+  left: 9px;
+
+  color: var(--blue);
+  font-size: 15px;
+}
+.input input:focus ~ label:after {
+  content: ':';
 }
