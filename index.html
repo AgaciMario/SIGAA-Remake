@@ -24,7 +24,7 @@
         <ul>
           <li>
             <input type="radio" name="tabs" class="rd_tabs" id="tab1" checked>
-            <label for="tab1">SIGAA</label>
+            <label class="tab" for="tab1">SIGAA</label>
             <div class="content">
               <header>
                 <h1 class="title">Entrar no sistema</h1>
@@ -32,16 +32,23 @@
               </header>
               
               <form action="/">
-                <input type="radio" name="user" class="rd_user" id="Aluno"checked><span>Aluno</span>
-                <input type="radio" name="user" class="rd_user" id="Prof_Fun"><span>Professor/Funcionario</span> 
+                <div class="rd_input">
+                  <input type="radio" name="user" class="rd_user" id="Aluno"checked>
+                  <label class="lbl_rd_user" for="Aluno"></label><span>Aluno</span>
+                </div>
+                
+                <div class="rd_input">
+                  <input type="radio" name="user" class="rd_user" id="Prof_Fun">
+                  <label class="lbl_rd_user" for="Prof_Fun"></label><span>Professor/Funcionario</span> 
+                </div>
 
                 <div class="input">
                   <input type="text" name="login" id="login">
-                  <label for="login">Login</label>  
+                  <label class="inp_signIn" for="login">Login</label>  
                 </div>
                 <div class="input">
-                  <input type="text" name="password" id="password">
-                  <label for="password">Senha</label>  
+                  <input type="password" name="password" id="password">
+                  <label class="inp_signIn" for="password">Senha</label>  
                 </div>
 
                 <button type="submit">Entrar</button>
@@ -61,25 +68,25 @@
 
           <li>
             <input type="radio" name="tabs" class="rd_tabs" id="tab2">
-            <label for="tab2">SIPAC</label>
+            <label class="tab" for="tab2">SIPAC</label>
             <div class="content">2</div>
           </li>
 
           <li>
             <input type="radio" name="tabs" class="rd_tabs" id="tab3">
-            <label for="tab3">SIGPRH</label>
+            <label class="tab" for="tab3">SIGPRH</label>
             <div class="content">3</div>
           </li>
 
           <li>
             <input type="radio" name="tabs" class="rd_tabs" id="tab4">
-            <label for="tab4">SIGADMIN</label>
+            <label class="tab" for="tab4">SIGADMIN</label>
             <div class="content">4</div>
           </li>
 
           <li>
             <input type="radio" name="tabs" class="rd_tabs" id="tab5">
-            <label for="tab5">BU</label>
+            <label class="tab" for="tab5">BU</label>
             <div class="content">5</div>
           </li>
         </ul>
