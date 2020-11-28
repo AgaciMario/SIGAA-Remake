@@ -159,10 +159,11 @@ label[for=tab5] {
   display: inline-block;
   width: 20px;
   height: 20px;
-
+  
   margin-right: 7px;
   border-radius: 50%;
   border: 1px solid black;
+  transition: all 0.15s ease-in-out;
 }
 
 .content form span{
@@ -206,7 +207,7 @@ form .input input {
   color: var(--gray);
   font-size: 19px;
 
-  transition: all 0.1s ease-out
+  transition: all 0.15s ease-in-out;
 }
 
 .content form button {  
@@ -300,12 +301,13 @@ form .input input:focus{
   border-color: var(--blue);
   color: var(--blue);
 }
-.input input:focus ~ label {
+.input input:focus ~ label,
+form .input input:valid ~ label{
   top: -21px;
   left: 9px;
 
-  color: var(--blue);
   font-size: 15px;
+  color: var(--blue);
 }
 .input input:focus ~ label:after {
   content: ':';
