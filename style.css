@@ -290,7 +290,7 @@ form .input input {
   display: block; /* mudança de abas */
 }
 
-/* FORM RADIO BUTTONS */
+/* FORM RADIO INPUTS */
 .rd_user:checked ~ .lbl_rd_user {
   background: var(--green);
   border-color: var(--green);
@@ -311,4 +311,21 @@ form .input input:valid ~ label{
 }
 .input input:focus ~ label:after {
   content: ':';
+}
+
+/* FORM BUTTONS */
+
+form button[type=submit]:hover{
+  background: var(--light_blue);
+}
+form button[type=submit]:active{
+  background: var(--blue);
+}
+form #signUp:hover, 
+.util a:hover{ 
+  color: var(--light_blue);
+}
+form #signUp:active, 
+.util a:active {
+  color: var(--blue);
 }
