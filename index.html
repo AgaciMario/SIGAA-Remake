@@ -1,97 +1,56 @@
 <!DOCTYPE html>
-  <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UFC - Universidade Federal do Ceará</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    
-    <div class="Banner">
-      <img src="img/BrasaoUFCFinal.png" alt="">
-      <p class="title">SIGAA</p>
-      <p class="subtitle">Sistema Integrado de Gestão de Atividades Acadêmicas</p>
-      <p class="contact">SIGAA | Copyright © 2010-2020 - Secretaria de Tecnologia da Informação 
-        UFC - (85) 3366-9999 - si3asprd04.ufc.br</p>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta>
+  <title>UFC - Universidade Federal do Ceará</title>
+  <link rel="icon" href="img/BrasaoUFCFinal.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--Banner com informações da UFC-->
+  <div class="Banner">
+    <img src="img/BrasaoUFCFinal.png" alt="simbolo da UFC">
+    <h1>SIGAA</h1>
+    <h2>Sistema Integrado de Gestão de Atividades acadêmicas</h2>
+    <p>
+      SIGAA | Copyright © 2010-2020 - Secretaria de Tecnologia da Informação 
+      UFC - (85) 3366-9999 - si3asprd04.ufc.br
+    </p>
+  </div>
+
+  <!--Container de login-->
+  <div class="Login-container">
+    <header>
+      <h1>Entrar no sistema</h1>
+      <a href=""><img src="img/librasFinal.png" alt=""></a>
+    </header>
+
+    <!--Formulário de login-->
+    <form action="/">
+      <div class="input">
+        <input type="text" id="login" required>
+        <label for="login"></label>
+      </div>
+
+      <div class="input">
+        <input type="text" id="passwd" required>
+        <label for="passwd"></label>
+      </div>
+
+      <button type="sumit">Entrar</button>
+      <button href="/">Cadastra-se</button>
+    </form>
+
+    <!--Links úteis-->
+    <div class="util">
+      <a href="/">Esqueceu o login?</a>
+      <a href="">Esqueceu a senha?</a>
     </div>
-
-    <div class="Container">
-      <nav class="nav_tabs">
-        <ul>
-          <li>
-            <input type="radio" name="tabs" class="rd_tabs" id="tab1" checked>
-            <label class="tab" for="tab1">SIGAA</label>
-            <div class="content">
-              <header>
-                <h1 class="title">Entrar no sistema</h1>
-                <a href="/"><img src="img/librasFinal.png" alt=""></a>
-              </header>
-              
-              <form action="/">
-                <div class="rd_input">
-                  <input type="radio" name="user" class="rd_user" id="Aluno"checked>
-                  <label class="lbl_rd_user" for="Aluno"></label><span>Aluno</span>
-                </div>
-                
-                <div class="rd_input" style="margin-left: 40px;">
-                  <input type="radio" name="user" class="rd_user" id="Prof_Fun">
-                  <label class="lbl_rd_user" for="Prof_Fun"></label><span>Professor/Funcionario</span> 
-                </div>
-
-                <div class="input">
-                  <input type="text" name="login" id="login" required>
-                  <label class="inp_signIn" for="login">Login</label>  
-                </div>
-                <div class="input">
-                  <input type="password" name="password" id="password" required>
-                  <label class="inp_signIn" for="password">Senha</label>  
-                </div>
-
-                <button type="submit">Entrar</button>
-                <button href="/" id="signUp">Cadastre-se</button>
-              </form>
-              
-              <div class="util">
-                <a href="/">Esqueceu o login?</a>
-                <a href="/" id="last">Esqueceu a senha?</a>
-              </div>
-            </div>
-
-            <a class="tutorial" href="/">
-              <p>TUTORIAIS  <span>></span> </p>
-            </a>
-          </li>
-
-          <li>
-            <input type="radio" name="tabs" class="rd_tabs" id="tab2">
-            <label class="tab" for="tab2">SIPAC</label>
-            <div class="content">Page 2</div>
-          </li>
-
-          <li>
-            <input type="radio" name="tabs" class="rd_tabs" id="tab3">
-            <label class="tab" for="tab3">SIGPRH</label>
-            <div class="content">Page 3</div>
-          </li>
-
-          <li>
-            <input type="radio" name="tabs" class="rd_tabs" id="tab4">
-            <label class="tab" for="tab4">SIGADMIN</label>
-            <div class="content">Page 4</div>
-          </li>
-
-          <li>
-            <input type="radio" name="tabs" class="rd_tabs" id="tab5">
-            <label class="tab" for="tab5">BU</label>
-            <div class="content">Page 5</div>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    
-  </body>
+  </div>
+</body>
 </html>
