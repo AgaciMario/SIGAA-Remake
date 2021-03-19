@@ -5,3 +5,54 @@
   --light_gray: #C4C4C4;
   --green: #028634;
 }
+
+* { border: 0; margin: 0; box-sizing: border-box; }
+html{ height: 100%; }
+
+body {
+  display: flex;
+  min-height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 20px;
+  background-color: var(--blue);
+  font-family: roboto, sans-serif;
+}
+
+.Banner { color:white; }
+
+h1 {
+  font-family: archivo, sans-serif;
+}
+
+.Banner h1 {
+  display: inline;
+  position: relative;
+  top: -20px;
+  left: 20px;
+  font-size: 6rem;
+}
+
+.Banner h2 { 
+  margin-bottom: 10px; 
+  font-weight: normal;
+}
+.Banner p { max-width: 61ch; }
+
+.Login-container {
+  background-color: white;
+  min-width: 570px;
+  min-height: 503px;
+  padding: 42px;
+  border-radius: 10px
+}
+
+.Login-container h1 {
+  display: inline;
+}
+
+.Login-container header img {
+  position: relative;
+  left: 180px;
+  top: 10px;
+}
