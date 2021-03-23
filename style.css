@@ -46,17 +46,19 @@ h1 {
 
 .Login-container {
   background-color: white;
-  min-width: 570px;
-  min-height: 503px;
+  min-width: 405px;
+  min-height: 435px;
   padding: 40px;
   border-radius: 10px;
 }
 
-.Login-container header a {
-  position: relative;
-  left: 180px;
-  top: 10px;
+header { position: relative; }
+header a { 
+  position: absolute;
+  right: 0;
 }
+
+form { position: relative; }
 
 .input_div {
   position: relative;
@@ -96,11 +98,33 @@ h1 {
 .signIn {
   background: var(--blue);
   color: white;
-  padding: 10px 20px;
+  padding: 10px 35px
 }
 
-.signUp {
+.signUp, .util a + a {
+  position: absolute;
+  right: 0;
+}
+
+.signUp,
+.util a {
   text-decoration: none;
   color: var(--blue);
   margin-left: 20px;
+}
+
+.util {
+  position: relative;
+}
+
+.util a {
+  display: inline-block;
+  margin-top: 35px;
+  margin-left: 0;
+  width: 10ch;
+  text-align: center;
+}
+
+.util a + a {
+  margin-left: 35px;
 }
