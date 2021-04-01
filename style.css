@@ -18,22 +18,26 @@ html{ height: 100%; }
 body {
   display: flex;
   min-height: 100%;
+  margin: 0 40px;
   align-items: center;
   justify-content: space-evenly;
   background-color: var(--blue);
 }
-
-.Banner { color:white; }
 
 h1 {
   display: inline;
   font-family: archivo, sans-serif;
 }
 
-.Banner h1 {
-  position: relative;
-  top: -20px;
-  left: 20px;
+.Banner { color:white; }
+
+.Banner .title {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.Banner .title h1 {
+  margin-left: 20px;
   font-size: 6rem;
 }
 
@@ -78,13 +82,16 @@ form { position: relative; }
   color: var(--gray);
 }
 
-.input_div input { outline: none; }
+.input_div input {
+  border: 1px solid var(--gray);
+  outline: none; 
+}
 
 .input_div label {
   position: absolute;
   left: 0;
   pointer-events: none;
-  border: 1px solid var(--gray);
+  transition: all .2s ease;
 }
 
 .signIn,
@@ -101,30 +108,39 @@ form { position: relative; }
   padding: 10px 35px
 }
 
-.signUp, .util a + a {
+.signUp {
   position: absolute;
   right: 0;
+  margin-left: 20px;
 }
 
 .signUp,
 .util a {
   text-decoration: none;
   color: var(--blue);
-  margin-left: 20px;
 }
 
 .util {
   position: relative;
-}
-
-.util a {
-  display: inline-block;
-  margin-top: 35px;
-  margin-left: 0;
-  width: 10ch;
+  margin: 35px 10px 0px 10px;
+  display: flex;
+  justify-content: space-between;
   text-align: center;
 }
 
-.util a + a {
-  margin-left: 35px;
+.util a {
+  width: 10ch;
+}
+
+.input_div input:valid {
+  border: 1px solid var(--blue)
+} 
+
+.input_div input:focus + label{
+  transform: translate3d(-20px, -35px, 0) scale(.9);
+}
+
+.input_div input:valid + label{
+  color: var(--blue);
+  transform: translate3d(-20px, -35px, 0) scale(.9);
 }
